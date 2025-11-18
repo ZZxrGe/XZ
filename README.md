@@ -1,2 +1,2 @@
-# XZ
+# PyThOn
 BE BE BE
