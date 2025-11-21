@@ -28,7 +28,7 @@ elif div1 or div2:
     print("Одно число делится на 3")
 else:
     print(False)
-#4
+#1
 number = int(input())
 
 if number < 0:
@@ -37,13 +37,14 @@ elif number > 100:
     print("*")
 else:
     print("*" * number)
+#2
 str2 = input()
 
 if str1 == str2:
     print(True)
 else:
     print(False)
-#6
+#3
 r = int(input())
 g = int(input())
 b = int(input())
@@ -60,5 +61,66 @@ elif r == 0 and g == 0 and b == 255:
     print("Синий цвет")
 else:
     print("Нет цвета")
+#1
+number = int(input())
 
+if number <= 0:
+    number = 1
 
+print(number - 1)
+print(number)
+print(number + 1)
+#2
+filename = input()
+extension = filename.split('.')[-1]
+
+if extension == "doc":
+    print("Word file")
+elif extension == "py":
+    print("Python file") 
+elif extension == "txt":
+    print("Text file")
+else:
+    print("Unknown file type")
+#3
+a = float(input())
+b = float(input())
+c = float(input())
+
+if a == b == c:
+    print("равносторонний")
+elif a == b or a == c or b == c:
+    print("равнобедренный")
+else:
+    print("разносторонний")
+#1
+text = 'important information in one line'
+letter = input()
+
+if letter in text:
+    print(True)
+else:
+    print(False)
+#2
+side1 = float(input())
+side2 = float(input())
+
+area = side1 * side2
+
+if side1 == side2:
+    figure_type = "квадрат"
+else:
+    figure_type = "прямоугольник"
+
+print(figure_type)
+print(area)
+#3
+print("Как твои дела?")
+user_response = input().lower()
+
+if user_response in ["хорошо", "нормально", "отлично"]:
+    print("😊")
+elif user_response in ["плохо", "не хорошо", "..."]:
+    print("😥")
+else:
+    print("😐")
