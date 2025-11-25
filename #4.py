@@ -124,3 +124,142 @@ elif user_response in ["плохо", "не хорошо", "..."]:
     print("😥")
 else:
     print("😐")
+
+#1
+a = float(input("Введите первое число: "))
+b = float(input("Введите второе число: "))
+
+if a > b:
+    result = a ** b
+elif b > a:
+    result = b ** a
+else:
+    result = a + b
+
+print(f"Результат: {result}")
+#2
+new_message = "Hello! How are you?"
+user_response = input("Введите ваш ответ: ")
+
+if new_message and user_response:
+    is_same_start = new_message[0] == user_response[0]
+    print(f"Результат: {is_same_start}")
+else:
+    print("Ошибка: одна из строк пуста.")
+#3
+length1 = float(input("Введите длину первого отрезка: "))
+length2 = float(input("Введите длину второго отрезка: "))
+
+if length1 > length2:
+    difference = length1 - length2
+    print(f"Первый отрезок длиннее второго на {difference}")
+elif length2 > length1:
+    difference = length2 - length1
+    print(f"Второй отрезок длиннее первого на {difference}")
+else:
+    print("Отрезки равны по длине.")
+#1
+user_string = input("Введите строку: ")
+
+if user_string:
+    is_same_ends = user_string[0] == user_string[-1]
+    print(f"Результат: {is_same_ends}")
+else:
+    print("Ошибка: строка пуста.")
+#2
+number = float(input("Введите число: "))
+
+if number % 2 == 0:
+    result = number ** 2
+elif number % 3 == 0:
+    result = number ** 3
+else:
+    result = number * 100
+
+print(f"Результат: {result}")
+#3
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+
+if num1 < 0:
+    num1 += 1000
+    print(f"Первое число изменено: {num1}, Второе число: {num2}")
+
+if num2 < 0:
+    num2 += 1000
+    print(f"Второе число изменено: {num2}, Первое число: {num1}")
+
+if num1 < 0 and num2 < 0:
+
+    print(False)
+elif num1 >= 0 and num2 >= 0:
+    print(True)
+
+
+num1_orig = float(input("Введите первое число: "))
+num2_orig = float(input("Введите второе число: "))
+
+if num1_orig < 0 and num2_orig < 0:
+    print(False)
+elif num1_orig >= 0 and num2_orig >= 0:
+    print(True)
+else:
+    if num1_orig < 0:
+        num1_modified = num1_orig + 1000
+        print(f"Первое число изменено на {num1_modified}, второе: {num2_orig}")
+    elif num2_orig < 0:
+        num2_modified = num2_orig + 1000
+        print(f"Второе число изменено на {num2_modified}, первое: {num1_orig}")
+        #1
+user_string = input("Введите строку: ")
+vowels = ['я', 'и', 'е', 'ю']
+
+if user_string and user_string[-1] in vowels:
+    print(True)
+else:
+    print(False)
+#2
+a = float(input("Введите длину первой стороны: "))
+b = float(input("Введите длину второй стороны: "))
+c = float(input("Введите длину третьей стороны: "))
+
+if a <= 0 or b <= 0 or c <= 0:
+    print(False)
+elif a + b > c and a + c > b and b + c > a:
+    print(True)
+else:
+    print(False)
+    #3
+
+last_digit = number % 10
+
+if last_digit == 0:
+    result = number ** 10
+elif last_digit == 1:
+    result = number % 3
+elif last_digit == 2:
+    result = number // 2
+else:
+    result = number ** 2
+
+print(f"Результат: {result}")
+#1
+number = int(input("Введите целое число: "))
+last_digit = number % 10
+
+if last_digit == 0:
+    result = number ** 10
+elif last_digit == 1:
+    result = number % 3
+elif last_digit == 2:
+    result = number // 2
+else:
+    result = number ** 2
+
+print(f"Результат: {result}")
+
+
+
+
+
+
