@@ -297,13 +297,31 @@ if number_1 < user_number < number_2:
     print(True)
 else:
     print(False)
-              
+    #1
+prog_num = 0
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
 
+if num1 < 0 and num2 < 0:
+    prog_num = num1 + num2
+    print(prog_num)
+elif num1 > 0 and num2 > 0:
+    prog_num = num1 - num2
+    print(prog_num)
+else:
+    print(False)
+#2
+num = int(input("Введите число: "))
 
+if num % 2 != 0:
+    num += 1
+    print(num)
+else:
+    print(True)
+#3
+s = input("Введите строку: ")
 
-
-
-
-
-
-
+if len(s) > 10:
+    print(s[:5])
+else:
+    print(s)
