@@ -52,6 +52,8 @@ elif r == 0 and g == 0 and b == 255:
     print("Синий цвет")
 else:
     print("Нет цвета")
+
+#2
 #1
 number = int(input())
 if number <= 0:
@@ -80,6 +82,8 @@ elif a == b or a == c or b == c:
     print("равнобедренный")
 else:
     print("разносторонний")
+
+#3
 #1
 text = 'important information in one line'
 letter = input()
@@ -106,6 +110,8 @@ elif user_response in ["плохо", "не хорошо", "..."]:
     print("😥")
 else:
     print("😐")
+
+#4
 #1
 a = float(input("Введите первое число: "))
 b = float(input("Введите второе число: "))
@@ -137,6 +143,8 @@ elif length2 > length1:
     print(f"Второй отрезок длиннее первого на {difference}")
 else:
     print("Отрезки равны по длине.")
+
+#5
 #1
 user_string = input("Введите строку: ")
 
@@ -181,7 +189,8 @@ else:
     elif num2_orig < 0:
         num2_modified = num2_orig + 1000
         print(f"Второе число изменено на {num2_modified}, первое: {num1_orig}")
-        #1
+#6
+#1
 user_string = input("Введите строку: ")
 vowels = ['я', 'и', 'е', 'ю']
 if user_string and user_string[-1] in vowels:
@@ -209,6 +218,8 @@ elif last_digit == 2:
 else:
     result = number ** 2
 print(f"Результат: {result}")
+
+#7
 #1
 number = int(input("Введите целое число: "))
 last_digit = number % 10
@@ -241,6 +252,8 @@ elif user_choice == "2":
     print(f"Лампочка 2 горит. Состояние: lamp_1={lamp_1}, lamp_2={lamp_2}")
 else:
     print("Обе лампочки не горят")
+
+#8
 #1
 switch_1 = False
 switch_2 = False
@@ -266,6 +279,8 @@ if user_string and user_string[0] == '/':
     print("«command»")
 else:
     print("«It's string>>>»")
+
+#9
 #1
 user_string = input("Введите произвольную строку: ")
 length = len(user_string)
@@ -297,7 +312,8 @@ if number_1 < user_number < number_2:
     print(True)
 else:
     print(False)
-    #1
+#10
+ #1
 prog_num = 0
 num1 = float(input("Введите первое число: "))
 num2 = float(input("Введите второе число: "))
@@ -325,3 +341,59 @@ if len(s) > 10:
     print(s[:5])
 else:
     print(s)
+
+#11
+#1
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+prog_num = 0
+if num1 < 0 and num2 < 0:
+    prog_num = num1 + num2
+    print(prog_num)
+elif num1 > 0 and num2 > 0:
+    prog_num = num1 - num2
+    print(prog_num)
+else:
+    print(False)
+#2
+num = int(input("Введите число: "))
+if num % 2 != 0:
+    num += 1
+    print(num)
+else:
+    print(True)
+#3
+s = input("Введите строку: ")
+if len(s) > 10:
+    print(s[:5])
+else:
+    print(s)
+
+#12
+#1
+ru = 'абвгдеёжзийкамнопрстуфхцчшщыьэюя'
+en = 'abcdefghijklmnopqrstuvwxyz'
+letter = input("Введите одну букву: ").lower()
+if letter in ru:
+    print("rus")
+elif letter in en:
+    print("eng")
+else:
+    print(None)
+#2
+pc_num = 10
+user_num = int(input("Введите ваше число: "))
+if user_num == pc_num or user_num == pc_num - 1 or user_num == pc_num + 1:
+    print(True)
+else:
+    print(False)
+#3
+correct_answer = (221 - 13) * 2
+print(f"Программа выводит строку: print('{correct_answer}')")
+user_answer = int(input("Введите ответ: "))
+if user_answer == correct_answer:
+    print(True)
+elif user_answer > correct_answer:
+    print(">")
+else:
+    print("<")
